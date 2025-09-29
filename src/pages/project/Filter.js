@@ -118,6 +118,15 @@ export default function Filter({ setFilterData, filterOptions }) {
                 className="displayCenter"
                 startIcon={<SettingsIcon />}
                 onClick={() => setOpen(!open)}
+
+                  sx={{"& .MuiButton-startIcon": {
+                    marginRight: "8px",
+                  },
+                  '[dir="rtl"] & .MuiButton-startIcon': {
+                    marginRight: 0,
+                    marginLeft: "8px", 
+                    },
+                  }}
               >
                 {t("advanced")}
               </Button>

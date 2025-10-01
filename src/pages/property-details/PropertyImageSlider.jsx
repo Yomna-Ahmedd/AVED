@@ -142,7 +142,7 @@ export default function PropertyImageSlider({ data }) {
 
               <CardMedia
                 component="img"
-                height="450"
+                height="658"
                 image={img}
                 alt={`Main Property ${i + 1}`}
                 sx={{ borderRadius: 2, width: "100%", objectFit: "cover" }}

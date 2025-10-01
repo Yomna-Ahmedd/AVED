@@ -123,7 +123,7 @@ const Slider = () => {
           style={{
             width: "100%",
             height: "100vh",      // full screen height
-            objectFit: "cover",   // prevents stretching
+            // objectFit: "cover",   prevents stretching 
           }}
         />
 
@@ -134,14 +134,14 @@ const Slider = () => {
           <Box className="slide-caption" sx={{ right: i18n.language === "ar" ? "2.5%" : null, display: "flex", flexDirection: "column", gap: "30px", direction: i18n.language === "ar" ? "rtl" : null }}>
             <div>
 
-              <img
+              {/* <img
                 src="/images/Slider/NEWLY_LAUNCHED_EN.svg"
                 alt="Newly Launched"
                 width="163px"
                 height="28px"
 
                 className="slide-badge"
-              />
+              /> */}
             </div>{i18n.language === "ar" && (
               <>
 

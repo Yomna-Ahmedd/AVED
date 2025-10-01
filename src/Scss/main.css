@@ -2098,7 +2098,7 @@ svg:not(:root) {
 }
 
 .custumSelectBoxmain {
-  margin-top: -195px;
+  /* margin-top: -195px; */
   position: relative;
   z-index: 999;
 }
@@ -2124,9 +2124,9 @@ svg:not(:root) {
   /* Modern and easiest way */
 }
 
-.landing-about {
+/* .landing-about {
   margin-top: 190px;
-}
+} */
 
 .videoText {
   color: #fff !important;
@@ -2174,6 +2174,7 @@ svg:not(:root) {
   margin-bottom: 20px;
   padding-top: 70%;
   cursor: pointer;
+
 }
 
 .project-post-thumbnail img {

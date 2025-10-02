@@ -123,7 +123,7 @@ const Slider = () => {
           style={{
             width: "100%",
             height: "100vh",      // full screen height
-            // objectFit: "cover",   prevents stretching 
+            objectFit: "cover",   //prevents stretching 
           }}
         />
 

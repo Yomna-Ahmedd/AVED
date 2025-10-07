@@ -29,14 +29,14 @@ const data = [
   {
     title: "our_projects",
     description: "explore_portfolio_projects",
-    images: "/images/Project/1_38 - Photo.jpg", 
+    images: "/images/Project/1.png", 
     className1: "straIcon1",
     navigation: "/project",
   },
   {
     title: "discover_blogs",
     description: "blog_tips_description",
-    images: "/images/Project/EX Shot 03 B.jpg", 
+    images: "/images/Project/3 (1).png", 
     className1: "straIcon1",
     navigation: "/blogs",
   },

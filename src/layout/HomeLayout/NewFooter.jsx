@@ -145,6 +145,8 @@ export default function NewFooter() {
               style={{ borderBottom: "1px solid #ffffff1c", width: "fit-content" }}
             >
               {t("footer_phone_number")}
+              <br />
+              {t("footer_phone_number2")}
             </Typography>
             <Typography
               variant="h3"

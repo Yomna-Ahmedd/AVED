@@ -100,7 +100,7 @@ export default function PropertyImageSlider({ data }) {
       >
         {data?.images?.length > 0 && <Tab label={i18n.language === "ar" ? "الصور" : "Images"} />}
         {data?.interiorDesign?.length > 0 && <Tab label={i18n.language === "ar" ? "التصميم الداخلي" : "Interior Design"} />}
-        {data?.exteriorDesign?.length > 0 && <Tab label={i18n.language === "ar" ? "التصميم الخارجي" : "Exterior Design"} />}
+        {data?.exteriorDesign?.length > 0 && <Tab label={i18n.language === "ar" ? " الخدمات" : "Facilities Design"} />}
       </Tabs>
 
       {/* Main Slider */}

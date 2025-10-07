@@ -17,7 +17,7 @@ const AboutUSBox = styled("Box")(({ theme }) => ({
     zIndex: 1,
     position: "relative",
     backgroundSize: "cover",
-    backgroundImage: "url(/images/About/about-bg.jpg)",
+    backgroundImage: "url(/images/About/5.png)",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top right",
   },

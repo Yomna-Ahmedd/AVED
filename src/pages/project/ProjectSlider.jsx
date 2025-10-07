@@ -69,7 +69,7 @@ const ProjectSlider = () => {
               className="rightprojrctImage"
             >
               <Image
-                src="/images/Project/roof_5 - Photo.jpg"
+                src="/images/Project/7.png"
                 alt="Hero Image"
                 layout="fill"
                 objectFit="cover"

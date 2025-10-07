@@ -99,7 +99,7 @@ export default function WhychooseUs() {
           <Grid item xs={12} md={5} textAlign="center">
             <ScrollAnimation animateIn="fadeInRight">
               <img
-                src="/images/Team/WHYchooseUS.jpg"
+                src="/images/Team/6.png"
                 alt="Why Choose Us"
                 style={{
                   width: "100%",

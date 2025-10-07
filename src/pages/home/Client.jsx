@@ -11,7 +11,7 @@ const MarquemainBox = styled("Box")(({ theme }) => ({
 }));
 
 const clientData = [
-  { image: "/images/Client/part_1.png" },
+  // { image: "/images/Client/part_1.png" },
   { image: "/images/Client/part_2.png" },
   { image: "/images/Client/part_3.png" },
   { image: "/images/Client/part_4.png" },
@@ -20,8 +20,8 @@ const clientData = [
   { image: "/images/Client/part_2.png" },
   { image: "/images/Client/part_3.png" },
   { image: "/images/Client/part_4.png" },
-  { image: "/images/Client/part_1.png" },
-  { image: "/images/Client/part_2.png" },
+  // { image: "/images/Client/part_1.png" },
+  // { image: "/images/Client/part_2.png" },
 ];
 
 export default function Client() {

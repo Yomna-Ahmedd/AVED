@@ -21,7 +21,7 @@ const ContactUSBox = styled("Box")(({ theme }) => ({
     position: "relative",
     zIndex: 1,
     backgroundSize: "cover",
-    backgroundImage: "url(/images/contact/contact_bg2.jpg)",
+    backgroundImage: "url(/images/Contact/contactUs.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top right",
     overflow: "hidden",

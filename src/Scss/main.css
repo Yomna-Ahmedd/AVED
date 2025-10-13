@@ -2535,7 +2535,7 @@ svg:not(:root) {
   border-radius: 5px;
   font-size: 13px;
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 20px;
 }
 

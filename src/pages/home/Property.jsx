@@ -134,7 +134,7 @@ export default function Property() {
           <Grid item xs={12} md={6} textAlign="center">
             <ScrollAnimation animateIn="fadeInRight">
               <img
-                src="/images/digital-experiance.webp"
+                src="/images/comingSOON1.png"
                 alt="Digital"
                 width="100%"
               />

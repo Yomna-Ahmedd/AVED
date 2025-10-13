@@ -6,6 +6,7 @@ import {
   styled,
   Typography,
   CircularProgress,
+  GlobalStyles,
 } from "@mui/material";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
@@ -25,6 +26,9 @@ import BedroomTabs from "./BedroomsTab";
 import BathroomTabs from "./BathroomsTabs";
 
 const AboutUSBox = styled("Box")(({ theme }) => ({
+    background: 'linear-gradient(to bottom, #f8f9fa, #ffffff)',
+    // paddingTop: '100px', 
+    // minHeight: '100vh',
   "& .aboutBannerImage": {
     zIndex: 1,
     zIndex: "999",
@@ -34,14 +38,14 @@ const AboutUSBox = styled("Box")(({ theme }) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top right",
   },
-  "& .headingBox": {
-    paddingBottom: "90px",
-    paddingTop: "150px",
-    [theme.breakpoints.down("sm")]: {
-      paddingBottom: "50px",
-      paddingTop: "100px",
-    },
-  },
+  // "& .headingBox": {
+  //   paddingBottom: "90px",
+  //   paddingTop: "150px",
+  //   // [theme.breakpoints.down("sm")]: {
+  //   //   paddingBottom: "50px",
+  //   //   paddingTop: "100px",
+  //   // },
+  // },
   "& .TopSection": {
     background: "#fff",
     color: "#000",
@@ -53,6 +57,7 @@ const AboutUSBox = styled("Box")(({ theme }) => ({
 export default function PropertyDetails() {
   const [property, setProperty] = useState({});
   const [loading, setLoading] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   const { t } = useTranslation();
   const { propertyId } = router.query;
@@ -86,14 +91,38 @@ export default function PropertyDetails() {
     }
   }, [propertyId]);
 
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
       <Head>
         <title>{property?.seo_meta_titles || t("seoTitleFallback")} | YourSiteName</title>
         <meta name="description" content={property?.overview} />
       </Head>
+
+      <GlobalStyles
+        styles={{
+          'header, .MuiAppBar-root': {
+            backgroundColor: 'rgba(43, 42, 42, 0.17) !important' ,
+            transition: 'all 0.3s ease-in-out !important',
+            paddingBottom: '0px !important',
+          }
+        }}
+      />
       <AboutUSBox>
-        <Box className="aboutBannerImage">
+        {/* <Box className="aboutBannerImage">
           <Container style={{ position: "relative", zIndex: "999" }}>
             <Box className="headingBox">
               <Typography variant="h1" color="#fff">
@@ -135,7 +164,7 @@ export default function PropertyDetails() {
               </Typography>
             </Box>
           </Container>
-        </Box>
+        </Box> */}
 
         {/* 🔄 Show loader while loading */}
         {loading ? (

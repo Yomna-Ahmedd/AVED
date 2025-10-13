@@ -12,14 +12,14 @@ const MarquemainBox = styled("Box")(({ theme }) => ({
 
 const clientData = [
   // { image: "/images/Client/part_1.png" },
-  { image: "/images/Client/part_2.png" },
-  { image: "/images/Client/part_3.png" },
-  { image: "/images/Client/part_4.png" },
-  { image: "/images/Client/part_5.jpg" },
+  { image: "/images/Client/15.png" },
+  { image: "/images/Client/16.png" },
+  { image: "/images/Client/17.png" },
   { image: "/images/Client/part_6.png" },
-  { image: "/images/Client/part_2.png" },
-  { image: "/images/Client/part_3.png" },
-  { image: "/images/Client/part_4.png" },
+  { image: "/images/Client/15.png" },
+  { image: "/images/Client/16.png" },
+  { image: "/images/Client/17.png" },
+  { image: "/images/Client/part_6.png" },
   // { image: "/images/Client/part_1.png" },
   // { image: "/images/Client/part_2.png" },
 ];

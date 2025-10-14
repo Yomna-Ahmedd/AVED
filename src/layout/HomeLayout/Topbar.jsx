@@ -314,7 +314,7 @@ export default function Header() {
                     fontSize: "12px",
                     background: "none",
                   }}
-                >
+                >      
                   {t("projects")}
                 </Button>
                 <Button

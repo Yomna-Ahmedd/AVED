@@ -17,6 +17,7 @@ import {
 import { useRouter } from "next/router";
 import { IoBedOutline, IoCarOutline } from "react-icons/io5";
 import { TbBath, TbBallAmericanFootball } from "react-icons/tb";
+import { LuRuler } from "react-icons/lu";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { apiRouterCall } from "@/api-services/service";
@@ -87,6 +88,9 @@ const PropertyCard = ({ property }) => {
             {property.images.map((img, i) => (
               <Box key={i}>
                 <CardMedia
+                onClick={() =>
+                  router.push({ pathname: `/property-details`, query: { propertyId: property?._id } })
+                }
                   component="img"
                   height="380"
                   image={img}
@@ -193,7 +197,7 @@ const PropertyCard = ({ property }) => {
 
             {property.area_sqft && (
               <Box display="flex" alignItems="center" gap={1}>
-                <TbBallAmericanFootball style={{ color: "#636363" }} />
+                <LuRuler style={{ color: "#636363" }} />
                 <Typography variant="body2" fontWeight="600" color="#636363">
                   {property.area_sqft} m²
                 </Typography>

@@ -24,6 +24,7 @@ import i18n from "@/i18n";
 import Client from "./Client";
 import BedroomTabs from "./BedroomsTab";
 import BathroomTabs from "./BathroomsTabs";
+import ContactSection from "./ContactSection";
 
 const AboutUSBox = styled("Box")(({ theme }) => ({
     background: 'linear-gradient(to bottom, #f8f9fa, #ffffff)',
@@ -181,6 +182,10 @@ export default function PropertyDetails() {
               <BathroomTabs data={property} /> */}
 
             <Client clientData={property.partners} brochure={property.brochure} />
+
+              {/* ⬅️ تمرير بيانات Property */}
+            <ContactSection propertyData={property} />
+            
             <Box mt={6}>
               <Typography variant="h3" fontWeight={600} gutterBottom mb={3}>
                 {t("relatedListings")}

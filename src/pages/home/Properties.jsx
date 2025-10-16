@@ -78,6 +78,7 @@ export default function Properties() {
                       src={item.images}
                       alt="Project"
                       className="scroll-animate"
+                      onClick={() => router.push(item.navigation)}
                     />
                   </Box>
 

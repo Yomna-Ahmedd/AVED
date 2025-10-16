@@ -2473,14 +2473,14 @@ svg:not(:root) {
 }
 
 .downloadaved {
-  background: #5c4d44;
+  background:  #c1bfbb;
   padding: 10px;
   border-radius: 10px;
   width: 90px;
   height: 90px;
 
   h2 {
-    color: #ffd;
+    color: white;
     font-size: 25px;
     line-height: 31px;
     text-transform: uppercase;
@@ -2587,7 +2587,7 @@ svg:not(:root) {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background 0.5s ease;
-  background: rgb(92 77 68);
+  background: #d2d1d1;
 
   &:hover {
     background: linear-gradient(135deg, #004e92, #000428);

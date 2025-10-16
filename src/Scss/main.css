@@ -2294,7 +2294,7 @@ svg:not(:root) {
 }
 
 .downloadaved {
-  background: #5c4d44;
+  background: #c1bfbb;
   padding: 10px;
   border-radius: 10px;
   width: 90px;
@@ -2302,7 +2302,7 @@ svg:not(:root) {
 }
 
 .downloadaved h2 {
-  color: #ffd;
+  color: white;
   font-size: 25px;
   line-height: 31px;
   text-transform: uppercase;
